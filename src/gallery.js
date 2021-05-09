@@ -1,9 +1,3 @@
-// зарендерить всю нашу галерею (video 15 до 1:10m или 1:25м) с помощью map() функции (создаем шаблон и join шаблонной строкой)
-// повесить ее на класс js-gallery с помощью insertAdjacentHTML
-// вешать слушателя на клик, чтобы открывать галерею по одной картинке
-// дальнейший функционал или анимации
-
-
 import gallery from './gallery-items.js';
 console.log(gallery);
 
@@ -47,7 +41,6 @@ backdrop.addEventListener('click', onBackdropCklick);
 preventMisclick.addEventListener('click', onLinkClick);
 
 
-
 function onGalleryContainerClick(event) {
   event.preventDefault();
   window.addEventListener('keydown', onEscKeyPress);
@@ -71,24 +64,15 @@ function onLinkClick(event) {
   //   refs.originalImage.alt = e.target.alt;
   // }
 
-  // if(e.target.nodeName === 'IMG') {
-  //   openModalBtn.classList.add('is-open');
-  //   openModalBtn.querySelector('.lightbox__image').src = e.target.src;
-  //   openModalBtn.querySelector('.lightbox__image').alt = e.target.alt;
-  // }
-
-function onCloseModal() {
+function onCloseModal(event) {
     window.removeEventListener('keydown', onEscKeyPress);
-    openModalBtn.classList.remove('is-open');
+  openModalBtn.classList.remove('is-open');
+  
+  event.target.dataset.source = "";
+  event.target.alt = "";
 }
 
-// refs.originalImage.src = "";
-  // refs.originalImage.alt = "";
-  // refs.lightBox.classList.remove("is-open");
-
 function onBackdropCklick(event) {
-    // console.log(event.currentTarget);
-    // console.log(event.target);
     if (event.currentTarget === event.target) {
     onCloseModal();
 }
