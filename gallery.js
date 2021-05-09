@@ -68,8 +68,10 @@ function onCloseModal(event) {
     window.removeEventListener('keydown', onEscKeyPress);
   openModalBtn.classList.remove('is-open');
   
-  event.target.dataset.source = "";
-  event.target.alt = "";
+  openModalBtn.querySelector('.lightbox__image').src = "";
+  openModalBtn.querySelector('.lightbox__image').alt = "";
+  // event.target.dataset.source = "";
+  // event.target.alt = "";
 }
 
 function onBackdropCklick(event) {
