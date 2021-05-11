@@ -1,0 +1,20 @@
+{
+  "name": "goit-js-hw-08-gallery",
+  "version": "1.0.0",
+  "description": "<!-- **Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**",
+  "main": "gallery-items.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlyonaYaroshenko/goit-js-hw-08-gallery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlyonaYaroshenko/goit-js-hw-08-gallery/issues"
+  },
+  "homepage": "https://github.com/AlyonaYaroshenko/goit-js-hw-08-gallery#readme"
+}
